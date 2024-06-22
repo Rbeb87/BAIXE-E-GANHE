@@ -1,10 +1,11 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog com Link de Afiliado</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Pacifico&display=swap');
 
         body {
             margin: 0;
@@ -16,7 +17,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            height: 100vh;
+            min-height: 100vh;
         }
 
         .video-container {
@@ -47,25 +48,33 @@
         }
 
         .affiliate-text {
-            font-size: 2em;
-            color: #333;
+            font-family: 'Pacifico', cursive;
+            font-size: 2.5em;
+            color: #FF5722;
             margin-bottom: 20px;
+            text-shadow: 2px 2px #000;
         }
 
         .affiliate-button {
             font-size: 1.5em;
             color: #fff;
-            background-color: #4CAF50;
+            background-color: #FF5722;
             border: none;
             padding: 15px 30px;
-            border-radius: 5px;
+            border-radius: 10px;
             cursor: pointer;
             text-decoration: none;
             margin-top: 20px;
+            transition: background-color 0.3s, transform 0.3s;
         }
 
         .affiliate-button:hover {
-            background-color: #45a049;
+            background-color: #FF7043;
+            transform: scale(1.05);
+        }
+
+        .affiliate-button:active {
+            transform: scale(1);
         }
     </style>
     <script>
@@ -82,6 +91,10 @@
     </script>
 </head>
 <body>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/4VYfycw9fMM?autoplay=1&mute=1" allow="autoplay" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/VcW9TUrmJ_4?autoplay=1&mute=1" allow="autoplay" allowfullscreen></iframe>
+    </div>
     <div class="affiliate-container">
         <div class="affiliate-text">
             Baixe e ganhe 10 reais <span>💰</span> <span>🎉</span>
@@ -89,10 +102,6 @@
         <a href="https://9f.com/r/bPpWn5S1" class="affiliate-button">
             Clique aqui para ganhar!
         </a>
-    </div>
-    <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/4VYfycw9fMM?autoplay=1&mute=1" allow="autoplay" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/VcW9TUrmJ_4?autoplay=1&mute=1" allow="autoplay" allowfullscreen></iframe>
     </div>
 </body>
 </html>
